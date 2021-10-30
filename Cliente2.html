@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cabañas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="Js/Cliente.js"></script>
+    <link rel="stylesheet" href="css/estiloClentes.css">
+
+</head>
+
+<body>
+<h1> </h1>
+<h1>Cabañas Solmar ! </h1>
+<a href="Cliente.html"><img src="Imagenes/back.png" alt="Regresar"></a>
+
+<h2>Tabla Clientes !!! </h2>
+<div style="overflow-x:auto;"></div>
+<div id="resultado1"></div>
+<h3>---------------------------------------------------</h3>
+<button onclick="traerInformacionClientesU()"> Consultar Clientes Para Actualizar</button>
+
+<form action="javascript:editarInformacionCL()" method="post" id="formulario">
+    <input type="number" id="CLid" placeholder="ID" required />
+    <input type="email" id="CLemail" placeholder="Email" required />
+    <input type="text" id="CLpassword" placeholder="Password" required />
+    <input type="text" id="CLname" placeholder="Name" required />
+    <input type="number" id="CLage" placeholder="Age" required /> <br>
+    <button type="submit">Actualizar Cliente</button>
+</form>
+</body>
+
+</html>

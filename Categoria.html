@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cabañas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="Js/Categorias.js"></script>
+    
+</head>
+
+<body>
+<h1> </h1>
+<h1>Cabañas Solmar ! </h1>
+<a href="Index.html"><img src="Imagenes/back.png" alt="Regresar"></a>
+
+<h2>Tabla Categorias !!! </h2>
+<div style="overflow-x:auto;"></div>
+<div id="resultado5"></div>
+<h3>-----------------------------------------------</h3>
+<button onclick="traerInformacionCategorias()"> Consultar Categorias</button>
+
+<form action="javascript:guardarInformacionCategorias()" method="post" id="formulario">
+    <input type="text" id="CAnombre" placeholder="NombreCategoria" required />
+    <input type="text" id="CAdescripcion" placeholder="Descripcion" required /> <br>
+    <button type="submit">Guardar Categoria</button>
+</form>
+<br>
+<h3>Actualizar</h3>
+<a href="Categorias2.html"><button type="submit">Actualizar Categoria</button></a>
+</body>
+
+</html>
